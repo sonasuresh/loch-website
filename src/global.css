@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+  overflow-x: hidden;
+}
+:root {
+  --body: Inter;
+
+  --font-size-xs: 12px;
+  --body-size: 16px;
+  --heading-4-size: 31px;
+  --heading-5-size: 25px;
+  --heading-3-size: 39px;
+  --caption-size: 13px;
+
+  --text-5-: #1d2129;
+  --grey-900: #19191a;
+  --white: #fff;
+  --grey-100: #e5e5e6;
+  --grey-50: rgba(229, 229, 230, 0.5);
+  --grey-800: #313233;
+  --blue-blue: #0071e3;
+  --neutral-300: #d4d4d4;
+  --grey-200: #cacbcc;
+  --background-f2f2f2: #f2f2f2;
+  --grey-300: #b0b1b3;
+  --grey-400: #96979a;
+
+  --gap-base: 16px;
+  --gap-xl: 20px;
+
+  --padding-lg: 18px;
+  --padding-xl: 20px;
+
+  --br-4xs-4: 8.4px;
+  --br-7xs-6: 5.6px;
+  --br-xs: 12px;
+  --br-5xs: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em; 
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
