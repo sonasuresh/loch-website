@@ -3,18 +3,17 @@
   --white: #efefef;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Inter');
 
 body,
 html {
   text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-family: Inter;
   margin: 0;
 }
 
 .grid-container {
   background: transparent;
-  font-family: 'Rubik', sans-serif;
 }
 
 @supports (display: grid) {
@@ -66,7 +65,7 @@ html {
 
   .item {
     display: inline-block;
-    min-height: 160px;
+    min-height: 110px;
     min-width: 340px;
     margin: 2em 1em;
 

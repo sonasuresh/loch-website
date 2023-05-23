@@ -1,11 +1,24 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Slider from './Slider';
 import "./Home.css";
 
 const Home = () => {
-
+  const [email, setEmail] = useState('');
+  const [showError, setShowError] = useState(false);
   const handleClick = () => {
-    window.location.href = 'https://app.loch.one/welcome';
+    if (validateEmail(email)) {
+      window.location.href = 'https://app.loch.one/welcome';
+    } else {
+      setShowError(true)
+    }
+  };
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
   return (
     <div className="landing-home">
@@ -21,8 +34,12 @@ const Home = () => {
             className="email-input"
             type="email"
             placeholder="Your email address"
+            value={email}
+            onChange={handleEmailChange}
+            required
           />
         </div>
+        {showError && <small class="has-error">Enter a valid email</small>}
 
         <div className="invitelink-text">
           You’ll receive an email with an invite link to join.

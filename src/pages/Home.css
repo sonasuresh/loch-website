@@ -2,11 +2,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: radial-gradient(50% 50%at 50% 50%,
-      rgba(17, 169, 132, 0.81) 17.21%,
-      #2f15d0 64.58%,
-      transparent);
-  width: 795px;
+  background:radial-gradient(79.84% 79.84% at 32.27% 91.27%,
+  rgba(17,169,132,.810119) 51.21%,
+  #2f15d0 64.58%,
+  transparent 100%);
+
+  width: 1000px;
   height: 1024px;
 }
 
@@ -29,7 +30,7 @@
 
 .slider {
   position: absolute;
-  top: 635px;
+  top: 580px;
   left: 160px;
   border-radius: var(--br-xs);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.04);
@@ -45,10 +46,10 @@
   position: absolute;
   background-color: var(--white);
   top: 0;
-  left: 800px;
+  left: 840px;
   box-shadow: 0 8px 22px -6px rgba(24, 39, 75, 0.12),
     0 14px 64px -4px rgba(24, 39, 75, 0.12);
-  width: 640px;
+  width: 802px;
   height: 1024px;
 }
 
@@ -56,7 +57,7 @@
   position: absolute;
   height: 5.86%;
   width: 4.17%;
-  top: 69.28%;
+  top: 64.28%;
   right: 91.67%;
   bottom: 5.86%;
   left: 4.17%;
@@ -82,6 +83,9 @@
   justify-content: flex-start;
 }
 
+.email-wrapper:hover {
+  border: 1px solid black;
+}
 .button-label {
   flex: 1;
   position: relative;
@@ -106,17 +110,10 @@
 
 }
 
-/* .button-label:hover{
+.button-label:hover{
     cursor: pointer;
-} */
-
-
-/* .add {
-  align-self: stretch;
-  border-radius: var(--br-5xs);
-  flex-direction: row;
-  padding: var(--padding-lg) 0;
-} */
+      box-shadow: 0 5px 10px rgba(53, 50, 50, 0.3);
+} 
 
 .invitelink-text{
   position: absolute;
@@ -195,8 +192,8 @@
 }
 
 .testimonial-label {
-  top: 630px;
-  left: 580px;
+  top: 585px;
+  left: 616px;
   font-size: var(--heading-5-size);
   line-height: 120%;
   font-weight: 500;
@@ -206,7 +203,7 @@
 .eye-icon,
 .line {
   position: absolute;
-  top: 660px;
+  top: 612px;
   left: 60px;
   width: 678px;
   height: 2px;
@@ -244,7 +241,7 @@
 
 .eye-container {
   position: absolute;
-  top: 315px;
+  top: 265px;
   left: 60px;
   width: 678px;
   height: 306px;
@@ -308,11 +305,6 @@
 }
 
 
-/* 
-.save-button {
-  top: 14px;
-  left: 127.4px;
-} */
 
 .save-label {
   position: absolute;
@@ -434,11 +426,12 @@
 }
 
 .landing-home {
-  position: relative;
+  position: fixed;
   background-color: var(--grey-900);
   width: 100%;
   height: 1024px;
   overflow-y: auto;
+  overflow-x: hidden;
   text-align: left;
   font-size: var(--body-size);
   color: var(--grey-900);
@@ -473,4 +466,10 @@
   100% {
     transform: rotate(15deg);
   }
+}
+.has-error {
+  color: #ea4e3c;
+  display: block;
+  margin-top: 155px;
+  margin-left: 16px;
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter");
 body {
   margin: 0;
   line-height: normal;
@@ -8,9 +8,9 @@ body {
   --body: Inter;
 
   --font-size-xs: 12px;
-  --body-size: 16px;
+  --body-size: 14px;
   --heading-4-size: 31px;
-  --heading-5-size: 25px;
+  --heading-5-size: 20px;
   --heading-3-size: 39px;
   --caption-size: 13px;
 
